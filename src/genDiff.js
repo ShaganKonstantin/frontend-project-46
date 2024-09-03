@@ -15,7 +15,9 @@ const genDiff = (filepath1, filepath2) => {
     const data1 = getData(fullFilePath1);
     const data2 = getData(fullFilePath2);
 
-   return findDiff(data1, data2)
+    const result = findDiff(data1, data2)
+
+    return result
 }; 
 
 
