@@ -1,14 +1,14 @@
-import yaml from "js-yaml";
+import yaml from 'js-yaml';
 
 const parse = (data, format) => {
-    if(format === 'json') {
-        return JSON.parse(data)
-    } else if (format === 'yaml') {
-        return yaml.load(data)
-    } else if (format === 'yml') {
-        return yaml.load(data)
-    }
-}
+  if (format === 'json') {
+    return JSON.parse(data);
+  } if (format === 'yaml') {
+    return yaml.load(data);
+  } if (format === 'yml') {
+    return yaml.load(data);
+  }
+};
 
 // const parse = (data, format) => {
 //     const parsers = {
@@ -20,4 +20,4 @@ const parse = (data, format) => {
 
 // export default (data, format) => parsers[format](data)
 
-export default parse
+export default parse;

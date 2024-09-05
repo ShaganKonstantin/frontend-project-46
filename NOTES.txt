@@ -1,0 +1,5 @@
+Jest поддерживает ECMAScript модули в экспериментальном режиме. Чтобы активировать поддержку модулей в тестах, нужно запускать тесты с переменной окружения NODE_OPTIONS. Сделать это можно командой:
+
+NODE_OPTIONS=--experimental-vm-modules npx jest
+
+gendiff __fixtures__/file1.json __fixtures__/file2.json 

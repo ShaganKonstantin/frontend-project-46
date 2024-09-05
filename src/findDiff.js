@@ -1,46 +1,34 @@
 import _ from 'lodash';
-const obj1 = {
-    "host": "hexlet.io",
-    "timeout": 50,
-    "proxy": "123.234.53.22",
-    "follow": false
-  }
-
-const obj2 = {
-    "timeout": 20,
-    "verbose": true,
-    "host": "hexlet.io"
-  }
 
 const findDiff = (obj1, obj2) => {
-    const result = {};
+  // const result = {};
+  let result = '{\n';
 
-    const obj1Keys = Object.keys(obj1);
-    const obj2Keys = Object.keys(obj2);
+  const obj1Keys = Object.keys(obj1);
+  const obj2Keys = Object.keys(obj2);
 
-    const sortedKeys1 = _.sortBy(obj1Keys);
-    const sortedKeys2 = _.sortBy(obj2Keys);
+  const sortedKeys1 = _.sortBy(obj1Keys);
+  const sortedKeys2 = _.sortBy(obj2Keys);
 
-    for (let key of sortedKeys1) {
-        if (!(key in obj2)) {
-            result[`- ${key}`] = obj1[key]
-        } else if (obj1[key] !== obj2[key]) {
-            result[`- ${key}`] = obj1[key];
-            result[`+ ${key}`] = obj2[key];
-        } else if (obj1[key] === obj2[key]) {
-            result[key] = obj2[key]
-        }
+  for (const key of sortedKeys1) {
+    if (!(key in obj2)) {
+      result += `  - ${key}: ${obj1[key]}\n`;
+    } else if (obj1[key] !== obj2[key]) {
+      result += `  - ${key}: ${obj1[key]}\n`;
+      result += `  + ${key}: ${obj2[key]}\n`;
+    } else if (obj1[key] === obj2[key]) {
+      result += `    ${key}: ${obj2[key]}\n`;
     }
+  }
 
-    for (let key of sortedKeys2) {
-        if (!(key in obj1)) {
-            result[`+ ${key}`] = obj2[key]
-        }
+  for (const key of sortedKeys2) {
+    if (!(key in obj1)) {
+      result += `  + ${key}: ${obj2[key]}`;
     }
-     
-    return result
-}
+  }
+  result += '\n}';
 
+  return result;
+};
 
-export default findDiff 
-
+export default findDiff;
