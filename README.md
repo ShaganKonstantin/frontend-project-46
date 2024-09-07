@@ -3,4 +3,4 @@
 
 https://asciinema.org/a/ahZJovAIaDyDD8WybqzqHoZrJ - step 4
 
-[![gendiff](https://github.com/ShaganKonstantin/frontend-project-46/actions/workflows/gendiff.yml/badge.svg)](https://github.com/ShaganKonstantin/frontend-project-46/actions/workflows/gendiff.yml) - бадж для gendiff экшена
+[![gendiff](https://github.com/ShaganKonstantin/frontend-project-46/actions/workflows/gendiff.yml/badge.svg)](https://github.com/ShaganKonstantin/frontend-project-46/actions/workflows/gendiff.yml) 
