@@ -1,3 +1,4 @@
+/* eslint-disable no-restricted-syntax */
 import _ from 'lodash';
 
 const findDiff = (obj1, obj2) => {
