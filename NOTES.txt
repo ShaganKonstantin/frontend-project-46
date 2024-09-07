@@ -3,3 +3,5 @@ Jest поддерживает ECMAScript модули в эксперимент�
 NODE_OPTIONS=--experimental-vm-modules npx jest
 
 gendiff __fixtures__/file1.json __fixtures__/file2.json 
+
+2184741597d04d75eef9543789715895d2156e39d4c9dec38ecbed11418c6e63 - Test reporter ID

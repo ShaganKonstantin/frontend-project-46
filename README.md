@@ -4,3 +4,7 @@
 https://asciinema.org/a/ahZJovAIaDyDD8WybqzqHoZrJ - step 4
 
 [![gendiff](https://github.com/ShaganKonstantin/frontend-project-46/actions/workflows/gendiff.yml/badge.svg)](https://github.com/ShaganKonstantin/frontend-project-46/actions/workflows/gendiff.yml) 
+
+[![Maintainability](https://api.codeclimate.com/v1/badges/7bcded4e108acd4f0941/maintainability)](https://codeclimate.com/github/ShaganKonstantin/frontend-project-46/maintainability)
+
+[![Test Coverage](https://api.codeclimate.com/v1/badges/7bcded4e108acd4f0941/test_coverage)](https://codeclimate.com/github/ShaganKonstantin/frontend-project-46/test_coverage)
