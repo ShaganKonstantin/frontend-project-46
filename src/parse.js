@@ -1,6 +1,7 @@
+/* eslint-disable consistent-return */
 import yaml from 'js-yaml';
 
-const parse = (data, format) => {
+function parse(data, format) {
   if (format === 'json') {
     return JSON.parse(data);
   } if (format === 'yaml') {
@@ -8,16 +9,14 @@ const parse = (data, format) => {
   } if (format === 'yml') {
     return yaml.load(data);
   }
-};
-
-// const parse = (data, format) => {
-//     const parsers = {
-//         json: JSON.parse,
-//         yaml: yaml.load,
-//         yml: yaml.load
-//     };
-// }
-
-// export default (data, format) => parsers[format](data)
-
+}
 export default parse;
+// const parse = (data, format) => {
+//   const parser = {
+//     json: JSON.parse,
+//     yaml: yaml.load,
+//     yml: yaml.load,
+//   };
+// };
+
+// export default (data, format) => parse[format](data);
