@@ -50,7 +50,7 @@ const stylish = (tree, depth = 1) => {
       case 'nested':
         return `${indentation.beforeOpenBrace}  ${item.name}: ${stylish(item.children, depth + 1)}`;
       default:
-        throw new Error('error');
+        throw new Error('No such type');
     }
   });
   return ['{', ...items, `${indentation.beforeCloseBraces}}`].join('\n');

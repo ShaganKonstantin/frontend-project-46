@@ -1,50 +1,90 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1725784233900" clover="3.2.0">
-  <project timestamp="1725784233900" name="All files">
-    <metrics statements="35" coveredstatements="34" conditionals="14" coveredconditionals="11" methods="6" coveredmethods="6" elements="55" coveredelements="51" complexity="0" loc="35" ncloc="35" packages="1" files="3" classes="3"/>
-    <file name="findDiff.js" path="/home/kshagan/frontend-project-46/src/findDiff.js">
-      <metrics statements="19" coveredstatements="19" conditionals="8" coveredconditionals="7" methods="1" coveredmethods="1"/>
-      <line num="4" count="1" type="stmt"/>
-      <line num="6" count="2" type="stmt"/>
-      <line num="8" count="2" type="stmt"/>
-      <line num="9" count="2" type="stmt"/>
-      <line num="11" count="2" type="stmt"/>
-      <line num="12" count="2" type="stmt"/>
-      <line num="14" count="2" type="stmt"/>
-      <line num="15" count="8" type="cond" truecount="2" falsecount="0"/>
-      <line num="16" count="4" type="stmt"/>
-      <line num="17" count="4" type="cond" truecount="2" falsecount="0"/>
-      <line num="18" count="2" type="stmt"/>
-      <line num="19" count="2" type="stmt"/>
-      <line num="20" count="2" type="cond" truecount="1" falsecount="1"/>
-      <line num="21" count="2" type="stmt"/>
-      <line num="25" count="2" type="stmt"/>
-      <line num="26" count="6" type="cond" truecount="2" falsecount="0"/>
-      <line num="27" count="2" type="stmt"/>
-      <line num="30" count="2" type="stmt"/>
-      <line num="32" count="2" type="stmt"/>
-    </file>
-    <file name="genDiff.js" path="/home/kshagan/frontend-project-46/src/genDiff.js">
-      <metrics statements="10" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
-      <line num="6" count="4" type="stmt"/>
-      <line num="8" count="4" type="stmt"/>
-      <line num="9" count="4" type="stmt"/>
-      <line num="11" count="1" type="stmt"/>
-      <line num="12" count="2" type="stmt"/>
-      <line num="13" count="2" type="stmt"/>
-      <line num="15" count="2" type="stmt"/>
-      <line num="16" count="2" type="stmt"/>
-      <line num="18" count="2" type="stmt"/>
-      <line num="20" count="2" type="stmt"/>
-    </file>
-    <file name="parse.js" path="/home/kshagan/frontend-project-46/src/parse.js">
-      <metrics statements="6" coveredstatements="5" conditionals="6" coveredconditionals="4" methods="1" coveredmethods="1"/>
-      <line num="5" count="4" type="cond" truecount="2" falsecount="0"/>
-      <line num="6" count="2" type="stmt"/>
-      <line num="7" count="2" type="cond" truecount="1" falsecount="1"/>
-      <line num="8" count="0" type="stmt"/>
-      <line num="9" count="2" type="cond" truecount="1" falsecount="1"/>
-      <line num="10" count="2" type="stmt"/>
-    </file>
+<coverage generated="1726766432443" clover="3.2.0">
+  <project timestamp="1726766432443" name="All files">
+    <metrics statements="63" coveredstatements="61" conditionals="30" coveredconditionals="27" methods="13" coveredmethods="13" elements="106" coveredelements="101" complexity="0" loc="63" ncloc="63" packages="2" files="5" classes="5"/>
+    <package name="src">
+      <metrics statements="31" coveredstatements="31" conditionals="17" coveredconditionals="16" methods="7" coveredmethods="7"/>
+      <file name="buildAst.js" path="/home/kshagan/frontend-project-46/src/buildAst.js">
+        <metrics statements="15" coveredstatements="15" conditionals="10" coveredconditionals="10" methods="2" coveredmethods="2"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="15" type="stmt"/>
+        <line num="6" count="15" type="stmt"/>
+        <line num="8" count="15" type="stmt"/>
+        <line num="10" count="15" type="stmt"/>
+        <line num="11" count="54" type="cond" truecount="2" falsecount="0"/>
+        <line num="12" count="15" type="stmt"/>
+        <line num="19" count="39" type="cond" truecount="2" falsecount="0"/>
+        <line num="20" count="6" type="stmt"/>
+        <line num="27" count="33" type="cond" truecount="4" falsecount="0"/>
+        <line num="28" count="12" type="stmt"/>
+        <line num="34" count="21" type="cond" truecount="2" falsecount="0"/>
+        <line num="35" count="12" type="stmt"/>
+        <line num="43" count="9" type="stmt"/>
+        <line num="49" count="15" type="stmt"/>
+      </file>
+      <file name="genDiff.js" path="/home/kshagan/frontend-project-46/src/genDiff.js">
+        <metrics statements="10" coveredstatements="10" conditionals="1" coveredconditionals="1" methods="4" coveredmethods="4"/>
+        <line num="7" count="6" type="stmt"/>
+        <line num="9" count="6" type="stmt"/>
+        <line num="10" count="6" type="stmt"/>
+        <line num="12" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="13" count="3" type="stmt"/>
+        <line num="14" count="3" type="stmt"/>
+        <line num="16" count="3" type="stmt"/>
+        <line num="17" count="3" type="stmt"/>
+        <line num="19" count="3" type="stmt"/>
+        <line num="21" count="3" type="stmt"/>
+      </file>
+      <file name="parse.js" path="/home/kshagan/frontend-project-46/src/parse.js">
+        <metrics statements="6" coveredstatements="6" conditionals="6" coveredconditionals="5" methods="1" coveredmethods="1"/>
+        <line num="5" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="7" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="8" count="2" type="stmt"/>
+        <line num="9" count="2" type="cond" truecount="1" falsecount="1"/>
+        <line num="10" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.Formatters">
+      <metrics statements="32" coveredstatements="30" conditionals="13" coveredconditionals="11" methods="6" coveredmethods="6"/>
+      <file name="formatters.js" path="/home/kshagan/frontend-project-46/src/Formatters/formatters.js">
+        <metrics statements="4" coveredstatements="3" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="3" type="cond" truecount="1" falsecount="1"/>
+        <line num="6" count="3" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+      </file>
+      <file name="stylish.js" path="/home/kshagan/frontend-project-46/src/Formatters/stylish.js">
+        <metrics statements="28" coveredstatements="27" conditionals="11" coveredconditionals="10" methods="5" coveredmethods="5"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="36" type="stmt"/>
+        <line num="5" count="36" type="stmt"/>
+        <line num="6" count="36" type="stmt"/>
+        <line num="8" count="36" type="stmt"/>
+        <line num="14" count="36" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="18" count="87" type="cond" truecount="2" falsecount="0"/>
+        <line num="19" count="66" type="stmt"/>
+        <line num="21" count="21" type="stmt"/>
+        <line num="23" count="21" type="stmt"/>
+        <line num="25" count="21" type="stmt"/>
+        <line num="26" count="27" type="cond" truecount="2" falsecount="0"/>
+        <line num="27" count="18" type="stmt"/>
+        <line num="29" count="9" type="stmt"/>
+        <line num="32" count="21" type="stmt"/>
+        <line num="35" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="36" count="15" type="stmt"/>
+        <line num="38" count="15" type="stmt"/>
+        <line num="39" count="54" type="stmt"/>
+        <line num="41" count="54" type="cond" truecount="5" falsecount="1"/>
+        <line num="43" count="15" type="stmt"/>
+        <line num="45" count="6" type="stmt"/>
+        <line num="47" count="12" type="stmt"/>
+        <line num="49" count="9" type="stmt"/>
+        <line num="51" count="12" type="stmt"/>
+        <line num="53" count="0" type="stmt"/>
+        <line num="56" count="15" type="stmt"/>
+      </file>
+    </package>
   </project>
 </coverage>
