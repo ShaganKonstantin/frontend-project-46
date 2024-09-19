@@ -1,8 +1,11 @@
 import stylish from './stylish.js';
 
 const formatters = (tree, formatName) => {
-  if (formatName === 'stylish') {
-    return stylish(tree);
+  switch (formatName) {
+    case 'stylish':
+      return stylish(tree);
+    default:
+      throw new Error('No such format');
   }
 };
 export default formatters;
