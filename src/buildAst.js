@@ -5,7 +5,7 @@ const buildAst = (obj1, obj2) => {
   const keys1 = Object.keys(obj1);
   const keys2 = Object.keys(obj2);
 
-  const sortedKeys = _.union(keys1, keys2).sort();
+  const sortedKeys = _.sortBy(_.union(keys1, keys2));
 
   const result = sortedKeys.map((key) => {
     if (!_.has(obj1, key)) {
