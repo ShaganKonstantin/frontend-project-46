@@ -50,3 +50,13 @@ test('plain', () => {
 
   expect(input).toEqual(expected);
 });
+
+test('json', () => {
+  const file1Path = getFixturePath('file1.json');
+  const file2Path = getFixturePath('file2.json');
+
+  const input = genDiff(file1Path, file2Path, 'json');
+  const expected = readFixtureFile('expected_json.txt');
+
+  expect(input).toEqual(expected);
+});
