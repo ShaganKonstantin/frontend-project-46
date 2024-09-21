@@ -48,5 +48,4 @@ const buildAst = (obj1, obj2) => {
   });
   return result;
 };
-
 export default buildAst;
