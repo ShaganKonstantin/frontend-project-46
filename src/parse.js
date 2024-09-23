@@ -9,14 +9,6 @@ function parse(data, format) {
   } if (format === 'yml') {
     return yaml.load(data);
   }
+  throw new Error('Unknown format');
 }
 export default parse;
-// const parse = (data, format) => {
-//   const parser = {
-//     json: JSON.parse,
-//     yaml: yaml.load,
-//     yml: yaml.load,
-//   };
-// };
-
-// export default (data, format) => parse[format](data);
